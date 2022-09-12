@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,h1,h2,h3,h4,p,
+ul,ol,li {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
+  color:rgba(252, 106, 87, 1);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* --------------- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 720px 1fr;
+    grid-template-rows: 120px 640px;
+    grid-template-areas: 
+    'user nav'
+    'user counter';
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 104px;
+    height: 40px;
+    border-radius: 20px;
+    color:rgba(252, 106, 87, 1);
+
+}
+
+.link:hover {
+    color:rgb(255, 255, 255);
+    background-color: rgba(252, 106, 87, 1);
+}
+
+.left__side {
+    grid-area: user;
+    padding: 40px 80px;
+    width: 100%;
+}
+
+.user__area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+    width: 640px;
+}
+
+.user__img {
+    height: 460px;
+    width: 460px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.social-icons {
+    position: absolute;
+    display: -webkit-box;
+    justify-content: space-between;
+    width: 108px;
+    bottom:0;
+    left: 0;
+}
+
+.social-icon-fb::after {
+    content: url('img/fb.svg');
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icon-insta::after {
+    content: url('img/instagram.png');
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 80px;
+    line-height: 128px;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 20px;
+    max-width: 468px;
+}
+
+.counter__area {
+    position: relative;
+    grid-area: counter;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+.counter {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 8px;
+    height: 318px;
+    width: 318px;
+    border-radius: 50%;
+    background-color: rgba(255, 245, 245, 1);
+    mix-blend-mode: multiply;
+    right: 0;
+}
+
+.days__counter {
+    font-family: 'Baloo 2', cursive;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.days__counter::after {
+    content: 'away';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 245, 245, 1);
+    mix-blend-mode: multiply;
+    height: 130px;
+    width: 130px;
+    color: rgba(252, 106, 87, 1);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    border-radius:50%;
+
+    bottom: 0;
+    right: -70px;
+}
+
+.desc {
+    font-size: 20px;
+}
