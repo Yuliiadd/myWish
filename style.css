@@ -126,11 +126,11 @@ select {
 
 @keyframes circle {
     0% {
-        transform: rotate(0);
+        transform: rotateZ(0);
         left: 32px;
     }
     50% {
-        transform: rotate(180deg);
+        transform: rotateZ(180deg);
         top: -10px;
         left: 70px;
     }
@@ -153,19 +153,19 @@ select {
     left: 18px;
     top: 15px;
     width: 520px;
-    opacity: 60%;
+    opacity: 50%;
     transform: rotate(90deg);
     animation: circle2 linear 40s infinite;
 }
 
 @keyframes circle2 {
     0% {
-        transform: rotate(0);
+        transform: rotateZ(0);
         left: 10px;
         top: 5px;
     }
     50% {
-        transform: rotate(180deg);
+        transform: rotateZ(180deg);
         left: 15px;
         top: 15px;
     }
