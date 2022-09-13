@@ -48,7 +48,7 @@ select {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 640px 1fr;
+    grid-template-columns: 720px 1fr;
     grid-template-rows: 120px 640px;
     grid-template-areas: 
     'nav nav'
@@ -100,7 +100,11 @@ select {
 
 .left__side {
     grid-area: user;
+    display: flex;
     width: 100%;
+    align-content: center;
+    justify-content: flex-end;
+
 }
 
 .user__area {
