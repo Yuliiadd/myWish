@@ -22,7 +22,6 @@ body {
   line-height: 1.5;
   font-family: 'Nunito', sans-serif;
   color:rgba(252, 106, 87, 1);
-  box-shadow: inset 0 15px 55px -35px rgba(252, 106, 87, 1);
 }
 
 ul, ol {
@@ -56,7 +55,6 @@ select {
     'user counter';
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 80px;
 }
 
 .nav {
@@ -65,9 +63,13 @@ select {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    width: 67%;
     height: 120px;
-
+    width: 100%;
+    left: 0;
+    padding: 0 80px;
+    background: linear-gradient(white, 95%, transparent);
+    z-index: 1;
+    box-shadow: inset 0 15px 35px -35px rgba(252, 106, 87, 1);
 }
 
 .nav__list {
