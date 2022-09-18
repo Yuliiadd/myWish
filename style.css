@@ -48,13 +48,17 @@ select {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 720px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 120px 640px;
     grid-template-areas: 
     'nav nav'
     'user counter';
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
+}
+
+.header {
+    padding: 0 80px;
 }
 
 .nav {
@@ -77,7 +81,7 @@ select {
     justify-content: space-evenly;
     align-items: center;
     max-width: 590px;
-    margin-right: 80px;
+
 }
 
 .link {
@@ -103,7 +107,7 @@ select {
     display: flex;
     width: 100%;
     align-content: center;
-    justify-content: flex-end;
+    justify-content: center;
 
 }
 
@@ -112,14 +116,13 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 640px;
-    width: 640px;
+    max-width: 640px;
 }
 
 .bubbles {
     position: absolute;
     z-index: -1;
-    left: 32px;
+    left: 40px;
     top: 5px;
     animation: circle linear 20s infinite;
 }
@@ -190,7 +193,7 @@ select {
 
 .social-icons {
     position: absolute;
-    display: -webkit-box;
+    display: flex;
     justify-content: space-between;
     width: 108px;
     bottom:0;
@@ -212,7 +215,7 @@ select {
     cursor: pointer;
 }
 
-.logo__desktop {
+.header__logo {
     display: block;
     font-family: 'Baloo 2', cursive;
     font-weight: 800;
@@ -235,7 +238,7 @@ select {
     font-weight: 800;
 }
 
-.description {
+.subtitle {
     font-size: 20px;
     max-width: 468px;
 }
@@ -245,6 +248,7 @@ select {
     grid-area: counter;
     width: 100%;
     margin-top: 100px;
+    padding-left: 20px;
 
 }
 
@@ -295,57 +299,74 @@ select {
 
 .dreams-cards {
     display: flex;
-    width: 1278px;
+    max-width: 1278px;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 80px;
 }
 .section {
-
+    margin-bottom: 100px;
+    width: 100%;
 }
+
+.red-bg {
+background-color: #FFF5F5;
+}
+
 .card1 {
-    width: 386px;
-    height: 330px;
+    max-width: 386px;
     background-color: #FFF5F5;
     padding: 30px;
     display: grid;
 }
 .description {
- text-align: center;
+    text-align: center;
+    margin: 30px 0 10px 0;
 }
-.dream_img {
+
+.dreamIdeas_img {
+    width: 326px;
+}
+
+.brand_img {
     height: 200px;
+    width: 200px;
 }
+
+.wish_img {
+    width: 386px;
+}
+
 .section-name {
-font-weight: 800;
-font-size: 40px;
-font-family: 'Baloo 2', cursive;
-height: 160px;
-display: flex;
-justify-content: center;
-align-items: center;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Baloo 2', cursive;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 
 .ideas-cards {
     display: flex;
-    width: 1278px;
+    max-width: 1278px;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 50px;
 }
-.idea-img {
-    height: 200px;
-}
-.section-2 {
-    background-color: #FFF5F5;
-}
+
+
 .dark-blue {
     color: #1F3865;
 }
 .brands-cards {
     display: flex;
-    width: 1278px;
+    max-width: 1278px;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 60px;
 }
 .card2 {
     display: grid;
@@ -356,9 +377,43 @@ align-items: center;
 }
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 386px 386px 386px;
-    grid-template-rows: 386px 386px 386px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 60px;
-    width: 1278px;
+    max-width: 1278px;
     margin: 0 auto;
+    padding: 0 80px 40px;
+}
+
+.footer {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 80px;
+    overflow: hidden;
+    /* padding-top: 110px; */
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+    margin-bottom: 30px;
+    bottom:0;
+    left: 0;
+}
+
+.footer__bubles {
+    width: 491px;
+    mix-blend-mode: multiply;
+}
+
+.footer__logo {
+    display: block;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    font-size: 30px;
+    width: 142px;
+    margin-bottom: 30px;
 }
