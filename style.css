@@ -290,3 +290,75 @@ select {
 .desc {
     font-size: 20px;
 }
+
+/* section 1 */   
+
+.dreams-cards {
+    display: flex;
+    width: 1278px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.section {
+
+}
+.card1 {
+    width: 386px;
+    height: 330px;
+    background-color: #FFF5F5;
+    padding: 30px;
+    display: grid;
+}
+.description {
+ text-align: center;
+}
+.dream_img {
+    height: 200px;
+}
+.section-name {
+font-weight: 800;
+font-size: 40px;
+font-family: 'Baloo 2', cursive;
+height: 160px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.ideas-cards {
+    display: flex;
+    width: 1278px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.idea-img {
+    height: 200px;
+}
+.section-2 {
+    background-color: #FFF5F5;
+}
+.dark-blue {
+    color: #1F3865;
+}
+.brands-cards {
+    display: flex;
+    width: 1278px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.card2 {
+    display: grid;
+}
+.card3 {
+    width: 386px;
+    height: 386px;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 386px 386px 386px;
+    grid-template-rows: 386px 386px 386px;
+    gap: 60px;
+    width: 1278px;
+    margin: 0 auto;
+}
