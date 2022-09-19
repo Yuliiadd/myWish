@@ -185,7 +185,6 @@ display: none;
     display: flex;
     width: 108px;
     margin-top: 30px;
-
 }
 
 .social-icon-fb::after {
@@ -201,7 +200,7 @@ display: none;
     width: 48px;
     height: 48px;
     cursor: pointer;
-}
+}   
 
 .header__logo {
     display: block;
@@ -274,7 +273,7 @@ display: none;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     border-radius:50%;
-
+    animation: scale 5s linear infinite;
     bottom: 0;
     right: -70px;
 }
@@ -642,7 +641,7 @@ display: none;
     mix-blend-mode: multiply;
     border-radius: 50%;
     margin: 0 30px;
-    animation: Orbita 15s linear infinite;
+    animation: Orbita 5s linear infinite;
 }
 
 @keyframes Orbita {
