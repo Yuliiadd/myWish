@@ -8,28 +8,32 @@
     <title>My wishes</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="first-screen">
         <div class="wrapper">
             <div class="nav">
-                <span class="header__logo">My wishes</span>
-                <ul class="nav__list" >
-                    <li><a class="link" href="#">3 dreams</a></li>
-                    <li><a class="link" href="#">5 brands</a></li>
-                    <li><a class="link" href="#">3 good ideas</a></li>
-                    <li><a class="link" href="#">3 bad ideas</a></li>
-                    <li><a class="link" href="#">wishlist</a></li>
+                <a href="#first-screen" class="header__logo">My wishes</a>
+                <ul class="nav__list">
+                    <li><a class="link" href="#dreams">3 dreams</a></li>
+                    <li><a class="link" href="#brands">5 brands</a></li>
+                    <li><a class="link" href="#ideas">3 good ideas</a></li>
+                    <li><a class="link" href="#bad-ideas">3 bad ideas</a></li>
+                    <li><a class="link" href="#wishes">wishlist</a></li>
                   </ul>
             </div>
             <div class="left__side">
-                <span class="logo__mobile">My wishes</span>
+                <a href="#first-screen" class="logo__mobile">My wishes</a>
                 <div class="user__area">
                    <img src="img/bubles.png" alt="" class="bubbles"> 
                    <img src="img/bubles.png" alt="" class="bubbles_2"> 
                    <img src="img/user.jpeg" alt="" class="user__img"> 
                     <div class="social__networks">
                         <ul class="social-icons">
-                            <li><a class="social-icon-fb" href="#" title="" target="_blank"></a></li>
-                            <li><a class="social-icon-insta" href="#" title="" target="_blank"></a></li>
+                            <li><a class="facebook" href="#" title="" target="_blank">
+                                <img src="img/fb.svg" alt="" class="social-icon">
+                            </a></li>
+                            <li><a class="instagram" href="#" title="" target="_blank">
+                                <img src="img/instagram.svg" alt="" class="social-icon">
+                            </a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,27 +50,27 @@
     </header>
     <div class="mobile__nav">
         <ul class="mobile__nav__list" >
-            <li><a class="mobile__link" href="#"> <img src="img/heart.svg" alt="" class="heart"> </a></li>
-            <li><a class="mobile__link"" href="#"><img src="img/star.svg" alt="" class="heart"></a></li>
-            <li><a class="mobile__link"" href="#"><img src="img/like.svg" alt="" class="heart"></a></li>
-            <li><a class="mobile__link"" href="#"><img src="img/dislike.svg" alt="" class="heart"></a></li>
+            <li><a class="mobile__link" href="#dreams"> <img src="img/heart.svg" alt="" class="heart"> </a></li>
+            <li><a class="mobile__link"" href="#brands"><img src="img/star.svg" alt="" class="heart"></a></li>
+            <li><a class="mobile__link"" href="#ideas"><img src="img/like.svg" alt="" class="heart"></a></li>
+            <li><a class="mobile__link"" href="#bad-ideas"><img src="img/dislike.svg" alt="" class="heart"></a></li>
             <li><a class="mobile__link"" href="#"><img src="img/gift.svg" alt="" class="heart"></a></li>
           </ul>
     </div>
     <section class="section">
         <div class="dreams">
-            <div class="section-name">3 dreams</div>
+            <a id="dreams" class="section-name">3 dreams</a>
             <div class="dreams-cards">
                 <div class="card1">
-                    <img src="img/dream1.png" class="dreamIdeas_img " alt="">
+                    <img src="img/dream1.png" class="ideas_img" alt="">
                     <span class="description">travel to Cuba</span>
                 </div>
                 <div class="card1">
-                    <img src="img/dream2.png" class="dreamIdeas_img " alt="">
+                    <img src="img/dream2.png" class="ideas_img" alt="">
                     <span class="description">world fame</span>
                 </div>
                 <div class="card1">
-                    <img src="img/dream3.png" class="dreamIdeas_img " alt="">
+                    <img src="img/dream3.png" class="ideas_img" alt="">
                     <span class="description">cozy art workshop</span>
                 </div>
             </div>
@@ -74,7 +78,7 @@
     </section>
     <section class="section">
         <div class="brands">
-            <div class="section-name">5 brands</div>
+            <a id="brands" class="section-name">5 brands</a>
             <div class="brands-cards">
                 <div class="card2">
                     <img src="img/brand1.png" class="brand_img" alt="">
@@ -102,18 +106,18 @@
 
     <section class="section red-bg">
         <div class="good-ideas">
-            <div class="section-name">3 always GOOD ideas</div>
+            <a id="ideas" class="section-name">3 always GOOD ideas</a>
             <div class="ideas-cards">
                 <div class="card1">
-                    <img src="img/good-idea1.png" class="dreamIdeas_img" alt="">
+                    <img src="img/good-idea1.png" class="ideas_img" alt="">
                     <span class="description">candles</span>
                 </div>
                 <div class="card1">
-                    <img src="img/good-idea2.png" class="dreamIdeas_img" alt="">
+                    <img src="img/good-idea2.png" class="ideas_img" alt="">
                     <span class="description">cute notebooks</span>
                 </div>
                 <div class="card1">
-                    <img src="img/good-idea3.png" class="dreamIdeas_img" alt="">
+                    <img src="img/good-idea3.png" class="ideas_img" alt="">
                     <span class="description">money</span>
                 </div>
             </div>
@@ -122,78 +126,84 @@
 
     <section class="section">
         <div class="bad-ideas">
-            <div class="section-name dark-blue">3 always BAD ideas</div>
+            <a id="bad-ideas" class="section-name dark-blue">3 always BAD ideas</a>
             <div class="ideas-cards">
                 <div class="card1">
-                    <img src="img/bad-idea1.png" class="dreamIdeas_img" alt="">
+                    <img src="img/bad-idea1.png" class="ideas_img" alt="">
                     <span class="description dark-blue">souvenirs</span>
                 </div>
                 <div class="card1">
-                    <img src="img/bad-idea2.png" class="dreamIdeas_img" alt="">
+                    <img src="img/bad-idea2.png" class="ideas_img" alt="">
                     <span class="description dark-blue">stuffed tous</span>
                 </div>
                 <div class="card1">
-                    <img src="img/bad-idea3.png" class="dreamIdeas_img" alt="">
+                    <img src="img/bad-idea3.png" class="ideas_img" alt="">
                     <span class="description dark-blue">sweets</span>
                 </div>
             </div>
         </div>
     </section>
-    <section class="wishlist red-bg">
-        <div class="section-name">wishlist</div>
-        <div class="grid-wrapper">
-            <div classs="card3">
+    <section class="wishes red-bg">
+        <a id="wishes" class="section-name">wishlist</a>
+        <div class="wishlist">
+            <div class="card-3">
+                <img src="img/wish1.png" alt="" class="wish__img">
                 <div class="wish__hover">
                     <span class="wish__name">Yves Saint Laurent Black Opium</span>
                         <svg class="wish__icon" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0H10.1375C12.1312 0 13.9812 1.05687 14.9937 2.77813L16.5 5.34125L18.0063 2.77813C19.0188 1.05687 20.8687 0 22.8625 0H23C26.0375 0 28.5 2.4625 28.5 5.5C28.5 6.4 28.2812 7.19375 27.9 8H30.5C31.6063 8 32.5 8.89375 32.5 10V14C32.5 15.1062 31.6063 16 30.5 16H2.5C1.39562 16 0.5 15.1062 0.5 14V10C0.5 8.89375 1.39562 8 2.5 8H5.1C4.71625 7.19375 4.5 6.4 4.5 5.5C4.5 2.4625 6.9625 0 10 0ZM12.4062 4.29875C11.9312 3.49437 11.0687 3 10.1375 3H10C8.61875 3 7.5 4.11938 7.5 5.5C7.5 6.88125 8.61875 8 10 8H14.5813L12.4062 4.29875ZM23 3H22.8625C21.9312 3 21.0688 3.49437 20.5938 4.29875L18.4188 8H23C24.3813 8 25.5 6.88125 25.5 5.5C25.5 4.11938 24.3813 3 23 3ZM2.5 18H14.5V32H5.5C3.84312 32 2.5 30.6562 2.5 29V18ZM18.5 32V18H30.5V29C30.5 30.6562 29.1562 32 27.5 32H18.5Z" fill="#FC6A57"/>
                         </svg>
-                    <a class="wish__link" target="_blank" href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a>
+                    <a class="wish__link" target="_blank" href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059">Buy here</a>
                 </div>
-            </div>   
-            <div classs="card3">
+            </div>
+            <div class="card-3">
+                <img src="img/wish2.png" alt="" class="wish__img">
                 <div class="wish__hover">
                     <span class="wish__name">Cosmetics</span>
                         <svg class="wish__icon" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0H10.1375C12.1312 0 13.9812 1.05687 14.9937 2.77813L16.5 5.34125L18.0063 2.77813C19.0188 1.05687 20.8687 0 22.8625 0H23C26.0375 0 28.5 2.4625 28.5 5.5C28.5 6.4 28.2812 7.19375 27.9 8H30.5C31.6063 8 32.5 8.89375 32.5 10V14C32.5 15.1062 31.6063 16 30.5 16H2.5C1.39562 16 0.5 15.1062 0.5 14V10C0.5 8.89375 1.39562 8 2.5 8H5.1C4.71625 7.19375 4.5 6.4 4.5 5.5C4.5 2.4625 6.9625 0 10 0ZM12.4062 4.29875C11.9312 3.49437 11.0687 3 10.1375 3H10C8.61875 3 7.5 4.11938 7.5 5.5C7.5 6.88125 8.61875 8 10 8H14.5813L12.4062 4.29875ZM23 3H22.8625C21.9312 3 21.0688 3.49437 20.5938 4.29875L18.4188 8H23C24.3813 8 25.5 6.88125 25.5 5.5C25.5 4.11938 24.3813 3 23 3ZM2.5 18H14.5V32H5.5C3.84312 32 2.5 30.6562 2.5 29V18ZM18.5 32V18H30.5V29C30.5 30.6562 29.1562 32 27.5 32H18.5Z" fill="#FC6A57"/>
                         </svg>
-                    <a class="wish__link" target="_blank" href="https://parfums.ua/category/makeup">https://parfums.ua/category/makeup/dhfskjdskskjfh83972785287587345384579999992382hsdjdjahjdoiwei</a>
+                    <a class="wish__link" target="_blank" href="https://parfums.ua/category/makeup">Buy here</a>
                 </div>
             </div>
-            <div classs="card3">
+            <div class="card-3">
+                <img class="wish__img" src="img/wish3.png" alt="">
                 <div class="wish__hover">
                     <span class="wish__name">Cartier</span>
                         <svg class="wish__icon" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0H10.1375C12.1312 0 13.9812 1.05687 14.9937 2.77813L16.5 5.34125L18.0063 2.77813C19.0188 1.05687 20.8687 0 22.8625 0H23C26.0375 0 28.5 2.4625 28.5 5.5C28.5 6.4 28.2812 7.19375 27.9 8H30.5C31.6063 8 32.5 8.89375 32.5 10V14C32.5 15.1062 31.6063 16 30.5 16H2.5C1.39562 16 0.5 15.1062 0.5 14V10C0.5 8.89375 1.39562 8 2.5 8H5.1C4.71625 7.19375 4.5 6.4 4.5 5.5C4.5 2.4625 6.9625 0 10 0ZM12.4062 4.29875C11.9312 3.49437 11.0687 3 10.1375 3H10C8.61875 3 7.5 4.11938 7.5 5.5C7.5 6.88125 8.61875 8 10 8H14.5813L12.4062 4.29875ZM23 3H22.8625C21.9312 3 21.0688 3.49437 20.5938 4.29875L18.4188 8H23C24.3813 8 25.5 6.88125 25.5 5.5C25.5 4.11938 24.3813 3 23 3ZM2.5 18H14.5V32H5.5C3.84312 32 2.5 30.6562 2.5 29V18ZM18.5 32V18H30.5V29C30.5 30.6562 29.1562 32 27.5 32H18.5Z" fill="#FC6A57"/>
                         </svg>
-                    <a class="wish__link" target="_blank" href="https://www.cartier.com/ru-ru/jewellery/all-collections/trinity/koltso-trinity-22?pid=18026">https://www.cartier.com/ru-ru/jewellery/all-collections/trinity/koltso-trinity-22?pid=18026</a>
+                    <a class="wish__link" target="_blank" href="https://www.cartier.com/ru-ru/jewellery/all-collections/trinity/koltso-trinity-22?pid=18026">Buy here</a>
                 </div>
             </div>
-            <div classs="card3">
+            <div class="card-3">
+                <img class="wish__img" src="img/wish4.png" alt="">
                 <div class="wish__hover">
                     <span class="wish__name">Good wine</span>
                         <svg class="wish__icon" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0H10.1375C12.1312 0 13.9812 1.05687 14.9937 2.77813L16.5 5.34125L18.0063 2.77813C19.0188 1.05687 20.8687 0 22.8625 0H23C26.0375 0 28.5 2.4625 28.5 5.5C28.5 6.4 28.2812 7.19375 27.9 8H30.5C31.6063 8 32.5 8.89375 32.5 10V14C32.5 15.1062 31.6063 16 30.5 16H2.5C1.39562 16 0.5 15.1062 0.5 14V10C0.5 8.89375 1.39562 8 2.5 8H5.1C4.71625 7.19375 4.5 6.4 4.5 5.5C4.5 2.4625 6.9625 0 10 0ZM12.4062 4.29875C11.9312 3.49437 11.0687 3 10.1375 3H10C8.61875 3 7.5 4.11938 7.5 5.5C7.5 6.88125 8.61875 8 10 8H14.5813L12.4062 4.29875ZM23 3H22.8625C21.9312 3 21.0688 3.49437 20.5938 4.29875L18.4188 8H23C24.3813 8 25.5 6.88125 25.5 5.5C25.5 4.11938 24.3813 3 23 3ZM2.5 18H14.5V32H5.5C3.84312 32 2.5 30.6562 2.5 29V18ZM18.5 32V18H30.5V29C30.5 30.6562 29.1562 32 27.5 32H18.5Z" fill="#FC6A57"/>
                         </svg>
-                    <a class="wish__link" target="_blank" href="hhttps://goodwine.com.ua/?gclid=CjwKCAjwpqCZBhAbEiwAa7pXeYjTKIOufLENNleqGpUVnc7VzFO5SUETgJ8nIA79m0TOV4QJBcE4phoCfYwQAvD_BwE">https://goodwine.com.ua/kjshfkshiwuiw033994-sadsjdhjfhbjegiu3483748899879012-10hkjkjdjadkjapoepq2eoh</a>
+                    <a class="wish__link" target="_blank" href="hhttps://goodwine.com.ua/?gclid=CjwKCAjwpqCZBhAbEiwAa7pXeYjTKIOufLENNleqGpUVnc7VzFO5SUETgJ8nIA79m0TOV4QJBcE4phoCfYwQAvD_BwE">Buy here</a>
                 </div>
             </div>
-            <div classs="card3">
+            <div class="card-3">
+                <img class="wish__img" src="img/wish5.png" alt="">
                 <div class="wish__hover">
                     <span class="wish__name">Zoho</span>
                         <svg class="wish__icon" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0H10.1375C12.1312 0 13.9812 1.05687 14.9937 2.77813L16.5 5.34125L18.0063 2.77813C19.0188 1.05687 20.8687 0 22.8625 0H23C26.0375 0 28.5 2.4625 28.5 5.5C28.5 6.4 28.2812 7.19375 27.9 8H30.5C31.6063 8 32.5 8.89375 32.5 10V14C32.5 15.1062 31.6063 16 30.5 16H2.5C1.39562 16 0.5 15.1062 0.5 14V10C0.5 8.89375 1.39562 8 2.5 8H5.1C4.71625 7.19375 4.5 6.4 4.5 5.5C4.5 2.4625 6.9625 0 10 0ZM12.4062 4.29875C11.9312 3.49437 11.0687 3 10.1375 3H10C8.61875 3 7.5 4.11938 7.5 5.5C7.5 6.88125 8.61875 8 10 8H14.5813L12.4062 4.29875ZM23 3H22.8625C21.9312 3 21.0688 3.49437 20.5938 4.29875L18.4188 8H23C24.3813 8 25.5 6.88125 25.5 5.5C25.5 4.11938 24.3813 3 23 3ZM2.5 18H14.5V32H5.5C3.84312 32 2.5 30.6562 2.5 29V18ZM18.5 32V18H30.5V29C30.5 30.6562 29.1562 32 27.5 32H18.5Z" fill="#FC6A57"/>
                         </svg>
-                    <a class="wish__link" target="_blank" href="https://zoho.in.ua/ua/catalog/product/4132?color=shalvii&size=oversize&gclid=CjwKCAjwpqCZBhAbEiwAa7pXeR3_MjCyJAvOjAbN7XUaRtOQL2l2IItcFgHNbZf86ES2fvydIqDtYxoC0eoQAvD_BwE">https://zoho.in.ua/ua/catalog/product/joijruierhjhasjhgaoiqwiieieieuru38883884==44034892781781738172387</a>
+                    <a class="wish__link" target="_blank" href="https://zoho.in.ua/ua/catalog/product/4132?color=shalvii&size=oversize&gclid=CjwKCAjwpqCZBhAbEiwAa7pXeR3_MjCyJAvOjAbN7XUaRtOQL2l2IItcFgHNbZf86ES2fvydIqDtYxoC0eoQAvD_BwE">Buy here</a>
                 </div>
             </div>
-            <div classs="card3">
+            <div class="card-3">
+                <img class="wish__img" src="img/wish6.png" alt="">
                 <div class="wish__hover">
                     <span class="wish__name">Coffee machine</span>
                         <svg class="wish__icon" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0H10.1375C12.1312 0 13.9812 1.05687 14.9937 2.77813L16.5 5.34125L18.0063 2.77813C19.0188 1.05687 20.8687 0 22.8625 0H23C26.0375 0 28.5 2.4625 28.5 5.5C28.5 6.4 28.2812 7.19375 27.9 8H30.5C31.6063 8 32.5 8.89375 32.5 10V14C32.5 15.1062 31.6063 16 30.5 16H2.5C1.39562 16 0.5 15.1062 0.5 14V10C0.5 8.89375 1.39562 8 2.5 8H5.1C4.71625 7.19375 4.5 6.4 4.5 5.5C4.5 2.4625 6.9625 0 10 0ZM12.4062 4.29875C11.9312 3.49437 11.0687 3 10.1375 3H10C8.61875 3 7.5 4.11938 7.5 5.5C7.5 6.88125 8.61875 8 10 8H14.5813L12.4062 4.29875ZM23 3H22.8625C21.9312 3 21.0688 3.49437 20.5938 4.29875L18.4188 8H23C24.3813 8 25.5 6.88125 25.5 5.5C25.5 4.11938 24.3813 3 23 3ZM2.5 18H14.5V32H5.5C3.84312 32 2.5 30.6562 2.5 29V18ZM18.5 32V18H30.5V29C30.5 30.6562 29.1562 32 27.5 32H18.5Z" fill="#FC6A57"/>
                         </svg>
-                    <a class="wish__link" target="" href="https://bt.rozetka.com.ua/ua/delonghi-ec9665m/p347646381/?gclid=CjwKCAjwpqCZBhAbEiwAa7pXebhbxMjZLIWbszal26UvIAQRAKNsLBOV174dOHk-OhO2MiFD6hE1JBoCJcEQAvD_BwE">https://bt.rozetka.com.ua/ua/delonghi-ec9665m/p347646381/sdflskjfkdsjewe=eeeeese334</a>
+                    <a class="wish__link" target="" href="https://bt.rozetka.com.ua/ua/delonghi-ec9665m/p347646381/?gclid=CjwKCAjwpqCZBhAbEiwAa7pXebhbxMjZLIWbszal26UvIAQRAKNsLBOV174dOHk-OhO2MiFD6hE1JBoCJcEQAvD_BwE">Buy here</a>
                 </div>
             </div>
         </div>
@@ -202,8 +212,12 @@
         <span class="footer__logo">My wishes</span>
         <div class="footer__bubles"></div>
         <ul class="footer__social-icons" >
-            <li><a class="social-icon-fb" href="#" title="" target="_blank"></a></li>
-            <li><a class="social-icon-insta" href="#" title="" target="_blank"></a></li>
+            <li><a class="facebook" href="#" title="" target="_blank">
+                <img src="img/fb.svg" alt="" class="social-icon">
+            </a></li>
+            <li><a class="instagram" href="#" title="" target="_blank">
+                <img src="img/instagram.svg" alt="" class="social-icon">
+            </a></li>
         </ul>
     </footer>
     <script src="main.js"></script>

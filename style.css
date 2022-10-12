@@ -10,6 +10,10 @@ ol {
   padding: 0;
 }
 
+html {
+ scroll-behavior: smooth;
+}
+
 body,h1,h2,h3,h4,p,
 ul,ol,li {
   margin: 0;
@@ -22,6 +26,7 @@ body {
   line-height: 1.5;
   font-family: 'Nunito', sans-serif;
   color:rgba(252, 106, 87, 1);
+  overflow-x: hidden;
 }
 
 ul, ol {
@@ -76,16 +81,14 @@ display: none;
     left: 0;
     padding: 0 80px;
     background: linear-gradient(white, 95%, transparent);
-    z-index: 1;
+    z-index: 3;
     box-shadow: inset 0 15px 35px -35px rgba(252, 106, 87, 1);
 }
 
 .nav__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
-    max-width: 590px;
-
 }
 
 .link {
@@ -93,12 +96,13 @@ display: none;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    width: 104px;
+    /* width: 104px; */
+    padding: 0 20px;
     height: 40px;
     border-radius: 20px;
     color:rgba(252, 106, 87, 1);
     margin-left: 10px;
-
+    white-space: nowrap;
 }
 
 .link:hover {
@@ -187,20 +191,20 @@ display: none;
     margin-top: 30px;
 }
 
-.social-icon-fb::after {
-    content: url('img/fb.svg');
+.social-icon {
     width: 48px;
     height: 48px;
     margin-right: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
+ 
 
-.social-icon-insta::after {
-    content: url('img/instagram.png');
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-}   
+.social-icon:hover {
+    width: 54px;
+    height: 54px;
+    transform: rotate(15deg);
+}
 
 .header__logo {
     display: block;
@@ -208,6 +212,7 @@ display: none;
     font-weight: 800;
     font-size: 30px;
     width: 142px;
+    color:rgba(252, 106, 87, 1);
 }
 
 .logo__mobile {
@@ -216,13 +221,14 @@ display: none;
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 40px;
+    color:#FC6A57;
 }
 
 .title {
     font-family: 'Baloo 2', cursive;
-    font-size: 80px;
-    line-height: 128px;
+    font-size: 80px;;
     font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .subtitle {
@@ -251,6 +257,7 @@ display: none;
     background-color: rgba(255, 245, 245, 1);
     mix-blend-mode: multiply;
     right: 70px;
+    bottom: 0;
 }
 
 .days__counter {
@@ -294,6 +301,7 @@ display: none;
     align-items: center;
     width: 100%;
     text-align: center;
+    color:#FC6A57;
 }
 
 .section-name::after, 
@@ -344,7 +352,7 @@ display: none;
     max-width: 1440px;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 80px;
     margin-bottom: 100px;
 }
 
@@ -358,30 +366,48 @@ display: none;
 
 .card1 {
     position: relative;
-    width: 386px;
+    width: 31%;
     height: 330px;
     background-color: #FFF5F5;
     padding: 30px;
-    display: grid;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     border: 1px solid transparent;
     border-radius: 5px;
     transition: 0.3s;
+}
+
+.ideas_img {
+    height: 200px;
+    border-radius: 0;
+    object-fit: cover;
+
+}
+
+.description {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
 }
 
 .card1:hover {
     border: 1px solid #FC6A57;
     background-color: #FC6A57;
     padding: 0;
+    overflow: hidden;
 }
 
 .card1:hover .description {
     color: white;
-    margin-top: 0;
 }
 
-.card1:hover .dreamIdeas_img {
+.card1:hover .ideas_img {
     width: 100%;
+    height: 230px;
 }
 
 .dreams-cards .card1:hover::after {
@@ -396,11 +422,7 @@ display: none;
     left: 30px;
 }
 
-.description {
-    text-align: center;
-    font-size: 20px;
-    margin: 30px 0 10px 0;
-}
+
 
 
 /* 2 section - BRANDS*/
@@ -420,10 +442,14 @@ display: none;
 
 .card2 {
     position: relative;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    height: 270px;
     border: 1px solid transparent;
     transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .card2:hover {
@@ -431,6 +457,11 @@ display: none;
     background-color: #FC6A57;
     padding: 0;
 }
+
+.card2 .description {
+    bottom: 17px;
+}
+
 
 .card2:hover .description {
     color: white;
@@ -453,10 +484,6 @@ display: none;
 
 .good-ideas {
     padding-bottom: 30px;
-}
-
-.dreamIdeas_img {
-    width: 326px;
 }
 
 .ideas-cards {
@@ -486,6 +513,7 @@ display: none;
 .bad-ideas .card1:hover {
     background-color:#1F3865;
     border: 1px solid #1F3865;
+    border-radius: 5px;
 }
 
 .bad-ideas .card1:hover::after {
@@ -502,48 +530,34 @@ display: none;
 
 /* 4 section - WISHLIST  */
 
-.grid-wrapper > div:nth-child(1) {
-    background-image: url(img/wish1.png);
-    background-size: 386px 386px;
-    border-radius: 10px;
-    background-position: center;
+.wishlist {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 80px 40px;
+    justify-content: space-between;
+    gap: 30px;
+
 }
-.grid-wrapper > div:nth-child(2) {
-    background-image: url(img/wish2.png);
-    background-size: 386px 386px;
+
+.card-3 {
+    position: relative;
+    width: 386px;
+    height: 386px;
     border-radius: 10px;
-    background-position: center;
+    overflow: hidden;
 }
-.grid-wrapper > div:nth-child(3) {
-    background-image: url(img/wish3.png);
-    background-size: 386px 386px;
-    border-radius: 10px;
-    background-position: center;
+
+.wish__img {
+    width: 100%;
 }
- 
-.grid-wrapper > div:nth-child(4) {
-    background-image: url(img/wish4.png);
-    background-size: 386px 386px;
-    border-radius: 10px;
-    background-position: center;
-}
- 
-.grid-wrapper > div:nth-child(5) {
-    background-image: url(img/wish5.png);
-    background-size: 386px 386px;
-    border-radius: 10px;
-    background-position: center;
-}
- 
-.grid-wrapper > div:nth-child(6) {
-    background-image: url(img/wish6.png);
-    background-size: 386px 386px;
-    border-radius: 10px;
-    background-position: center;
-}
- 
+
+
 .wish__hover {
-    max-width: 386px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
     height: 386px;
     display: flex;
     flex-direction: column;
@@ -554,6 +568,8 @@ display: none;
     border-radius: 10px;
     opacity: 0;
     transition: 0.5s;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .wish__hover:hover {
@@ -573,25 +589,14 @@ display: none;
 }
 
 .wish__link {
+    display: block;
     font-weight: 400;
     color:white;
     font-size: 16px;
-    max-width: 326px;
+    width: 100%;
     text-align: center;
-    word-wrap: break-word;
+} 
 
-}
-
-
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 60px;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 80px 40px;
-}
   
 /* footer  */
 
@@ -704,7 +709,6 @@ and (max-width: 1199px) {
     .title {
         font-family: 'Baloo 2', cursive;
         font-size: 60px;
-        line-height: 128px;
         font-weight: 800;
     }
 }
@@ -731,6 +735,7 @@ and (max-width: 1023px) {
         align-items: center;
         width: 100%;
         margin-top: 50px;
+        max-width: none;
     }
     .user__img {
         height: 60px;
@@ -768,18 +773,18 @@ and (max-width: 1023px) {
 
     .title {
         font-size: 50px;
-        line-height: 80px;
         margin-top: 60px;
     }
 
     .subtitle {
         font-size: 16px;
+        max-width: none;
     }
 
     .counter {
-        margin-top: 50px;
         height: 278px;
         width:278px;
+        bottom: 40px;
     }
 
     .counter__area {
@@ -803,8 +808,12 @@ and (max-width: 1023px) {
     .card1 { 
         margin: 0 auto;
         margin-bottom: 60px;
-        width: 335px;
-        height: 330px;
+        min-width: 290px;
+        height: 280px;
+    }
+
+    .description {
+        bottom: 10px;
     }
 
     .social-icons {
@@ -858,6 +867,17 @@ and (max-width: 1023px) {
         margin-right: 16px;
     }
 
+    .card2 {
+        margin-bottom: 20px;
+        height: 80px;
+    }
+
+    .card2 .description {
+        bottom: 23px;
+        width: auto;
+        left: 95px;
+    }
+
     .card2:hover::after {
         content: "";
         display: block;
@@ -870,10 +890,6 @@ and (max-width: 1023px) {
         left: 25px;
     }
     
-    .description {
-        margin-top: 25px;
-    }
-
     .good-ideas .section-name::after,
     .good-ideas .section-name::before,
     .bad-ideas .section-name::after,
@@ -890,6 +906,11 @@ and (max-width: 1023px) {
     .bad-ideas,
     .wishlist {
         padding: 50px 0;
+    }
+
+    .wishlist {
+        justify-content: center;
+        gap: 10px;
     }
 
     .good-ideas .card1 {
@@ -909,18 +930,11 @@ and (max-width: 1023px) {
         padding: 20px;
     }
 
-    .wish_img {
-        border-radius: 10px;
-        margin: 0 auto;
-    }
-
     .wish__hover {
-        position: relative;
-        margin-bottom: 126px;
-        width: 335px;
-        height: 335px;
+        max-width: 300px;
+        height: 300px;
+        background-color: transparent;
         opacity: 1;
-        background-color:transparent;
     }
 
     .wish__name,
@@ -928,17 +942,22 @@ and (max-width: 1023px) {
         opacity: 0;
     }
 
-
     .wish__link {
         position: absolute;
         color:#FC6A57;
-        bottom: -100px;
-
+        bottom: -40px;
+        transition: 0.5s;
     }
 
-    .card3 {
-        background-position: center;
+    .wish__link:hover {
+        font-size: 20px;
+        text-transform: uppercase;
     }
+
+    .card-3 {
+        max-width: 300px;
+    }
+
     .footer {
         position: relative;
     }
@@ -966,7 +985,7 @@ and (max-width: 1023px) {
         background: linear-gradient(360deg, #FFF5F5 80%, transparent 100%);
         width: 100%;
         height: 115px;
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
 }
