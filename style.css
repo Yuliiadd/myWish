@@ -103,6 +103,7 @@ display: none;
     color:rgba(252, 106, 87, 1);
     margin-left: 10px;
     white-space: nowrap;
+    transition: .5s;
 }
 
 .link:hover {
@@ -213,6 +214,7 @@ display: none;
     font-size: 30px;
     width: 142px;
     color:rgba(252, 106, 87, 1);
+    transition: .3s;
 }
 
 .logo__mobile {
@@ -222,7 +224,15 @@ display: none;
     font-size: 30px;
     margin-bottom: 40px;
     color:#FC6A57;
+    transition: .3s;
 }
+
+.header__logo:hover,
+.logo__mobile:hover {
+    text-shadow: 1px 1px 2px rgba(67, 66, 66, 0.5);
+    transform: scale(1.1);
+}
+
 
 .title {
     font-family: 'Baloo 2', cursive;
@@ -535,7 +545,7 @@ display: none;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 80px 40px;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
 
 }
@@ -569,7 +579,6 @@ display: none;
     opacity: 0;
     transition: 0.5s;
     z-index: 1;
-    cursor: pointer;
 }
 
 .wish__hover:hover {
